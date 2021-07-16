@@ -1,0 +1,11 @@
+.sda-list-wrapper {
+    &__list {
+      list-style: none;
+    }
+  
+    &__item {
+      &--done {
+        text-decoration: line-through;
+      }
+    }
+  }
