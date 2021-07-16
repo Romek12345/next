@@ -1,23 +1,20 @@
-import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AppComponent } from './app.component'
-import { BodyComponent } from './body/body.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
+
+//import { EmployeesComponent } from './views/employees/employees.component';
+import { NgModule } from '@angular/core';
+import { PageNotFoundComponent } from './views/page-not-found/page-not-found.component';
+//import { TodoComponent } from './views/todo/todo.component';
 
 const routes: Routes = [
-  { path: 'body', component: BodyComponent },
-  { path: 'header', component: HeaderComponent },
-  { path: 'footer', component: FooterComponent },
- // { path: '', redirectTo: '/home', pathMatch: 'full' },
-  { path: '**', component: FooterComponent },
-  // path** dziala tylko, i nie wczytuje reszty komponentow(body,headera)
-
+  //{ path: 'todo', component: TodoComponent },
+  //{ path: 'employees', component: EmployeesComponent },
+  { path: '', redirectTo: '/todo', pathMatch: 'full' },
+  { path: '**', component: PageNotFoundComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
 
