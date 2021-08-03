@@ -1,20 +1,48 @@
-<p>lockpick works!</p>
-<a>dziala</a>
-<header> Wybierz 3 razy dobra strone i wygraj</header>
-<div>
+<app-header>
+    <span title>Wybierz 4 razy właściwą stronę i wygraj</span>
+  </app-header>
+<div class="containers">
+    <div class="first" id="first">
+        <input type="radio" name="genre" value="left"/>
+        <input type="radio" name="genre" value="right"/>
+    </div>
+    <div class="second" id="second">
+        <input type="radio" name="toby" value="left"/>
+        <input type="radio" name="toby" value="right"/>
+    </div>
+    <div class="third" id="third">
+        <input type="radio" name="mom" value="left"/>
+        <input type="radio" name="mom" value="right"/>
+    </div>
+    <div class="fourth" id="fourth">
+        <input type="radio" name="tek" value="left"/>
+        <input type="radio" name="tek" value="right"/>
+    </div>
     <div>
+        <button class="checking" id="button">spraswdź</button>
+    </div>
+
+    
+
+
+
+
+
+
+
+    <!-- <div class="leftcontainer">
         <button>Lewa strona</button>
 
     </div>
-    <div>
+    <div class="rightcontainer">
         <button>Prawa strona</button>
 
+    </div> -->
+</div>
+<footer>
+    <div>
+                /*  wyrzuca bledy przy zmianie czegos w views.module.ts 
+                    (np:10;25"todo.description, object is possibly udnifined.),
+                    a przy dodaniu lub usunięciu czegos np diva w html, znowu działą  *//
     </div>
-</div>
-<div>
-
-</div>
-
-/*  wyrzuca bledy przy zmianie czegos w views.module.ts 
-    (np:10;25"todo.description, object is possibly udnifined.)
-    i przy dodaniu lub usunięciu jakiegos diva w html znowu działą  */
+</footer>

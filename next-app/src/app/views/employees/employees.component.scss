@@ -1,0 +1,21 @@
+
+.check {
+    justify-content: center;
+}
+
+.container {
+    min-height: 100px;
+    height: auto !important;
+    height: 100px;
+    margin-bottom: -29px;
+    position: relative;
+
+}
+footer {
+    clear: both;
+    height: 29px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    position: absolute;
+}

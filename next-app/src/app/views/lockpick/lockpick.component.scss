@@ -1,6 +1,59 @@
-button {
-    color:red;
-    padding: 20px;
-    background-color: lavender;
+.containers {
+    :hover{
+        color:rgb(225, 243, 208);
+        background-color: rgb(46, 119, 202);
+        cursor: pointer;
+        //transition: background-color .3s;
+
+        // ^^dodanie utrudnienia w zaznaczaniu poprzez width-50% w hover (uciekaja spod kursora)
+    }
+    color:rgb(231, 224, 224);
+    padding: 150px;
+    background-color: rgb(58, 84, 231);
+    display: block;
     justify-content: center;
+    align-items: stretch;
+    flex-direction: column;
+    position:relative;
+}
+.first {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 10px;
+    padding: 5px;
+}
+.second {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 5px;
+}
+.third {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 5px;
+}
+.fourth{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 5px;
+}
+
+button {
+    padding: 10px;
+    margin-left: 900px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer {
+    background-color: rgb(57, 141, 219)
 }
